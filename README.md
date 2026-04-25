@@ -1,4 +1,4 @@
-# KeaBuilder AI + ML Assessment — Manvendra Singh Bundela
+# KeaBuilder AI + ML Assessment
 
 > **Role:** AI Architect + Machine Learning Engineer — Dream Reflection Media (VARYNT)
 
@@ -57,7 +57,7 @@ uvicorn ml-assessment.q4_slow_responses.streaming_demo:app --reload
 
 ### a. Classification logic
 
-Each form submission is stringified to JSON and sent to Claude with the
+Each form submission is stringified to JSON and sent to the LLM with the
 `CLASSIFICATION_PROMPT` (see `q1_lead_classification/prompts.py`).
 
 Scoring rubric the prompt encodes:
@@ -270,7 +270,7 @@ See full architecture doc: [`ai-assessment/q6_high_volume/architecture.md`](ai-a
 
 ## Q7 — Tools, Frameworks & Platforms
 
-**LLM / AI APIs:** Anthropic Claude (SDK, tool use, streaming, prompt caching), OpenAI GPT-4o, Stability AI SDXL, ElevenLabs, RunwayML
+**LLM / AI APIs:** Anthropic API (SDK, tool use, streaming, prompt caching), OpenAI GPT-4o, Stability AI SDXL, ElevenLabs, RunwayML
 
 **ML / Deep Learning:** PyTorch, Hugging Face Diffusers & Transformers, sentence-transformers, FAISS, ONNX Runtime, InsightFace, OpenCLIP, scikit-learn
 

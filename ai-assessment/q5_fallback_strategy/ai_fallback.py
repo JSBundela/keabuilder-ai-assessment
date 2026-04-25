@@ -134,7 +134,7 @@ async def secondary_llm(prompt: str) -> dict:
 
 async def main():
     p1 = AIProvider(name="openai-gpt4o",  call=primary_llm)
-    p2 = AIProvider(name="claude-sonnet", call=secondary_llm)
+    p2 = AIProvider(name="gpt-4o-mini", call=secondary_llm)
 
     result = await call_with_fallback(
         providers=[p1, p2],

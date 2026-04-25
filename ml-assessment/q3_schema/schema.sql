@@ -29,7 +29,7 @@ CREATE INDEX ON user_inputs (user_id, created_at DESC);
 CREATE TABLE ml_predictions (
     id              UUID        PRIMARY KEY DEFAULT uuid_generate_v4(),
     input_id        UUID        NOT NULL REFERENCES user_inputs(id) ON DELETE CASCADE,
-    model_id        TEXT        NOT NULL,        -- e.g. 'lead-classifier-v2', 'claude-sonnet-4-6'
+    model_id        TEXT        NOT NULL,        -- e.g. 'lead-classifier-v2', 'gpt-4o'
     model_version   TEXT,
     prediction_type TEXT        NOT NULL,        -- 'classification' | 'generation' | 'embedding' | 'ranking'
     output          JSONB       NOT NULL,        -- raw model output (label, score, text, url, …)

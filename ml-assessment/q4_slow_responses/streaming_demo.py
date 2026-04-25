@@ -34,13 +34,13 @@ client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 @app.get("/stream")
 async def stream_reply(prompt: str = "Write a short KeaBuilder funnel description."):
     """
-    Streams Claude tokens back to the browser via SSE.
+    Streams LLM tokens back to the browser via SSE.
     The browser renders each chunk as it arrives — no blank-screen wait.
     """
 
     async def generator():
         with client.messages.stream(
-            model="claude-sonnet-4-6",
+            model="gpt-4o",
             max_tokens=300,
             messages=[{"role": "user", "content": prompt}],
         ) as stream:
