@@ -1,0 +1,67 @@
+[
+  {
+    "status": "processed",
+    "lead": {
+      "name": "Sarah Mitchell",
+      "email": "sarah@scalehq.io",
+      "phone": "+1-555-0192",
+      "company": "ScaleHQ",
+      "employees": "50-200",
+      "message": "We're evaluating funnel builders for our Q3 product launch. Budget is approved (~$500/mo). Need to decide by Friday.",
+      "industry": "SaaS",
+      "source": "pricing_page"
+    },
+    "classification": {
+      "classification": "HOT",
+      "confidence": 0.94,
+      "reasoning": "Budget confirmed, hard deadline Friday, decision-maker submitting from pricing page.",
+      "missing_fields": [],
+      "follow_up_questions": []
+    },
+    "response": "Hi Sarah — thanks for reaching out! Helping SaaS teams nail their launch funnels is exactly what KeaBuilder is built for, and with your Friday deadline we can move fast. Let's jump on a 20-minute demo today so I can show you exactly how we'd set this up for your Q3 launch — grab a slot here: [calendar_link]."
+  },
+  {
+    "status": "processed",
+    "lead": {
+      "name": "Raj Patel",
+      "email": "raj@consultingco.in",
+      "phone": "",
+      "company": "ConsultingCo",
+      "employees": "1-10",
+      "message": "Came across KeaBuilder in a newsletter. Looks interesting. Might explore it sometime.",
+      "industry": "Consulting",
+      "source": "blog_post"
+    },
+    "classification": {
+      "classification": "COLD",
+      "confidence": 0.87,
+      "reasoning": "No budget, no timeline, passive discovery — early awareness stage only.",
+      "missing_fields": ["budget", "timeline", "use_case"],
+      "follow_up_questions": [
+        "Are you currently using any funnel or lead capture tools for your consulting clients?"
+      ]
+    },
+    "response": "Hey Raj — glad the newsletter pointed you our way! For consulting businesses, a lot of our users love how KeaBuilder makes it easy to build client-facing lead funnels without dev work. Here's a quick 5-minute case study showing exactly that: [link]. No pressure — take a look whenever suits you!"
+  },
+  {
+    "status": "needs_clarification",
+    "lead": {
+      "name": "Tom",
+      "email": "tom@gmail.com",
+      "phone": "",
+      "company": "",
+      "employees": "",
+      "message": "hi",
+      "industry": "",
+      "source": "homepage"
+    },
+    "clarification": {
+      "extracted": {
+        "name": "Tom",
+        "intent": "unknown",
+        "pain_point": "unknown"
+      },
+      "clarifying_question": "Hi Tom! What brought you to KeaBuilder today — are you looking to build funnels, capture leads, or something else?"
+    }
+  }
+]
